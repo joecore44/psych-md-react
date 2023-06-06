@@ -1,0 +1,34 @@
+{
+    "reactNativeComponent": {
+      "prefix": "src",
+      "body": [
+        "import React from 'react';",
+        "import { View, Image, StyleSheet } from 'react-native';",
+        "import { TopNavigation, useTheme } from '@ui-kitten/components';",
+        "import { useNavigation } from '@react-navigation/native';",
+        "import { useLayout } from 'hooks';",
+        "",
+        "import { Container, Content, Text } from 'components';",
+        "",
+        "const ${1:NameScreen}Screen = React.memo(() => {",
+        "  const theme = useTheme();",
+        "  const { goBack } = useNavigation();",
+        "  const { height, width, top, bottom } = useLayout();",
+        "",
+        "  return (",
+        "    <Container>",
+        "      <TopNavigation />",
+        "      <Content>",
+        "        <Text>${1:NameScreen}Screen</Text>",
+        "      </Content>",
+        "    </Container>",
+        "  );",
+        "});",
+        "",
+        "export default ${1:NameScreen}Screen;",
+        "",
+        "const styles = StyleSheet.create({});"
+      ],
+      "description": "Healer Component"
+    }
+  }
