@@ -9,25 +9,25 @@ const DrugsScreen = React.memo(() => {
   const [selectedIndex, setSelectedIndex] = React.useState(0);
   const DATA = [
     {
-      title: "Drugs List",
+      title: "Current Meds",
       icon: "drugs",
-      numOfAvailable: "113 list",
+      numOfAvailable: "3",
       onPress: () => {
         navigate("DrugsList");
       },
     },
     {
-      title: "Drugs Shop",
+      title: "Order Meds",
       icon: "shop",
-      numOfAvailable: "88 drugs",
+      numOfAvailable: "38 meds",
       onPress: () => {
         navigate("DrugsShop");
       },
     },
     {
-      title: "News Healthy",
+      title: "Medication Info",
       icon: "news",
-      numOfAvailable: "113 available",
+      numOfAvailable: "113 articles",
       onPress: () => {
         navigate("DrugsNews");
       },
@@ -37,16 +37,11 @@ const DrugsScreen = React.memo(() => {
   return (
     <Container useSafeArea={false}>
       <Header
-        title="Drugs"
+        title="Medication"
         accessoryLeft={<NavigationAction status="white" icon="menu" onPress={toggleDrawer} />}
       />
       <Content contentContainerStyle={styles.content}>
-        <Text category="header" marginTop={40} marginBottom={12}>
-          Hello Jonas,
-        </Text>
-        <Text category="t1" uppercase marginRight={60} status="platinum">
-          Do you need medicines?
-        </Text>
+        
 
         <View style={styles.childrenContent}>
           {DATA.map((item, i) => {

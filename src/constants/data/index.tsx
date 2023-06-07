@@ -123,11 +123,11 @@ const DATA_HOSPITAL = [
 const DATA_DOCTOR: IDoctorProps[] = [
   {
     id: 1,
-    name: "Jonas Smith",
-    tel: "+842837442000",
+    name: "Jordann Shepard",
+    tel: "469-262-8504",
     location: "242 Gleichner Valleys, Robertview,Micronesia",
-    industry: "Cardiologist",
-    distance: "0.8 km away",
+    industry: "Trip Sitter",
+    distance: "",
     rate: {
       rateStar: 5.0,
       reviewer: 234,
@@ -143,17 +143,17 @@ const DATA_DOCTOR: IDoctorProps[] = [
   },
   {
     id: 2,
-    name: "Jame Wilson",
-    tel: "+842837442000",
+    name: "Jordann Shepard",
+    tel: "469-262-8504",
     location: "242 Gleichner Valleys, Robertview,Micronesia",
-    distance: "0.8 km away",
-    industry: "GP-general practitioner",
+    industry: "Trip Sitter",
+    distance: "",
     rate: {
       rateStar: 5.0,
       reviewer: 234,
     },
     avatar: {
-      path: "https://user-images.githubusercontent.com/87011701/190119058-a1f5f080-2591-4049-8f74-558d92237f6a.png",
+      path: "https://user-images.githubusercontent.com/87011701/190119081-1b739923-3710-44e4-8365-0f59822f0bb8.png",
     },
     coordinate: {
       latitude: 37.78825,
@@ -163,17 +163,17 @@ const DATA_DOCTOR: IDoctorProps[] = [
   },
   {
     id: 3,
-    name: "Franklin Umbrella",
-    distance: "0.8 km away",
-    tel: "+842837442000",
-    industry: "GP-general practitioner",
+    name: "Jordann Shepard",
+    tel: "469-262-8504",
     location: "242 Gleichner Valleys, Robertview,Micronesia",
+    industry: "Trip Sitter",
+    distance: "",
     rate: {
       rateStar: 5.0,
       reviewer: 234,
     },
     avatar: {
-      path: "https://user-images.githubusercontent.com/87011701/190119251-afdd125d-2773-4ed2-aafd-386717ff9f50.png",
+      path: "https://user-images.githubusercontent.com/87011701/190119081-1b739923-3710-44e4-8365-0f59822f0bb8.png",
     },
     coordinate: {
       latitude: 37.78825,
@@ -183,37 +183,17 @@ const DATA_DOCTOR: IDoctorProps[] = [
   },
   {
     id: 4,
-    name: "Kevin Khan",
+    name: "Jordann Shepard",
+    tel: "469-262-8504",
     location: "242 Gleichner Valleys, Robertview,Micronesia",
-    distance: "0.8 km away",
-    tel: "+842837442000",
-    industry: "Cardiologist",
+    industry: "Trip Sitter",
+    distance: "",
     rate: {
       rateStar: 5.0,
       reviewer: 234,
     },
     avatar: {
-      path: "https://user-images.githubusercontent.com/87011701/190119353-d8e0b134-2206-4b3a-a676-48f9b616c9da.png",
-    },
-    coordinate: {
-      latitude: 37.78825,
-      longitude: -122.4324,
-    },
-    status: OnlineStatusEnum.Online,
-  },
-  {
-    id: 5,
-    name: "Jonas Smith",
-    tel: "+842837442000",
-    distance: "0.8 km away",
-    industry: "Cardiologist",
-    location: "242 Gleichner Valleys, Robertview,Micronesia",
-    rate: {
-      rateStar: 5.0,
-      reviewer: 234,
-    },
-    avatar: {
-      path: "https://user-images.githubusercontent.com/87011701/190119251-afdd125d-2773-4ed2-aafd-386717ff9f50.png",
+      path: "https://user-images.githubusercontent.com/87011701/190119081-1b739923-3710-44e4-8365-0f59822f0bb8.png",
     },
     coordinate: {
       latitude: 37.78825,

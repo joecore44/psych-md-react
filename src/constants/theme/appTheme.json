@@ -10,20 +10,24 @@
     "color-basic-600": "#969696",
     "color-basic-700": "#696969",
     "color-red-100": "#FF0000",
-    "color-green-100": "#08C299",
-    "color-green-200": "#44BD5E",
-    "color-green-300": "#33DE7C",
-    "color-green-400": "#06D6A0",
+    "color-green-100": "#FFFFAB",
+    "color-green-200": "#FFFFAB",
+    "color-green-300": "#FFFFAB",
+    "color-green-400": "#FFFFAB",
   
-    "color-blue-100": "#BFCAE6",
-    "color-blue-200": "#94AAD6",
-    "color-blue-300": "#7388C1",
-    "color-blue-400": "#4B66EA",
-    "color-blue-500": "#4B66EA",
+    "color-blue-100": "#a000ff",
+    "color-blue-200": "#a000ff",
+    "color-blue-300": "#a000ff",
+    "color-blue-400": "#a000ff",
+    "color-blue-500": "#a000ff",
   
     "color-blue-sky-100": "#53D0EC",
     "color-blue-sky-200": "#75D9F0",
     "color-blue-sky-300": "#98E3F4",
     "color-blue-sky-400": "#BAECF7",
-    "color-blue-sky-500": "#DDF6FB"
+    "color-blue-sky-500": "#DDF6FB",
+
+    "psyc-purple": "#a000ff",
+    "psyc-grey": "#444444",
+    "psyc-green": "#FFFFAB"
   }

@@ -36,7 +36,7 @@ const HomeButton = memo(
         style={[
           styles.button,
           {
-            backgroundColor: hightLight ? "#4B66EA" : "#969696",
+            backgroundColor: hightLight ? "#a000ff" : "#969696",
           },
           style,
           {

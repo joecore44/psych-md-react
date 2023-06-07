@@ -24,7 +24,7 @@ const DrugsList = React.memo(() => {
     <Container style={styles.container} useSafeArea={false}>
       <Header
         accessoryLeft={<NavigationAction status="white" />}
-        title="Drugs List"
+        title="Current Medications"
       />
 
       <FlatList
@@ -87,35 +87,20 @@ const styles = StyleSheet.create({
 });
 const DATA = [
   {
-    title: "Augmentin Sachet",
+    title: "Ketamine Troches (30mg)",
     id: "1",
   },
   {
-    title: "Cetirizin hydrochlorid",
+    title: "Atorvistatin (80mg)",
     id: "2",
   },
   {
-    title: "Nizoral Cream",
+    title: "Testosterone C. (200mg)",
     id: "1a",
   },
   {
-    title: "Doxycyclin",
+    title: "MK-677",
     id: "1b",
   },
-  {
-    title: "BoneSure",
-    id: "1c",
-  },
-  {
-    title: "Prednisolon",
-    id: "1d",
-  },
-  {
-    title: "Gastropulgite",
-    id: "1d",
-  },
-  {
-    title: "BoneSure",
-    id: "1d",
-  },
+  
 ];

@@ -43,7 +43,7 @@ const TabBar = ({
         styles.container,
         style,
         {
-          backgroundColor: backgroundTab,
+          backgroundColor: theme["psyc-purple"],
           borderColor: theme["text-platinum-color"],
         },
       ]}
@@ -52,7 +52,7 @@ const TabBar = ({
         const backgroundColor = {
           backgroundColor:
             tabActive === index
-              ? theme["text-info-color"]
+              ? theme["psyc-purple"]
               : theme["transparent"],
         };
         const tintColor = tabActive === index ? "basic" : "platinum";

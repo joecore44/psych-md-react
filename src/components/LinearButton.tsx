@@ -46,7 +46,7 @@ const LinearButton = ({
           width={251}
           height={24}
           rx={12}
-          fill={disabled ? "#969696" : "#4B66EA"}
+          fill={disabled ? "#969696" : "#a000ff"}
         />
         <Rect
           width={widthItem}
@@ -63,12 +63,12 @@ const LinearButton = ({
             x2={110.301}
             y2={-37.053}
           >
-            <Stop stopColor={disabled ? "#969696" : "#4B66EA"} />
+            <Stop stopColor={disabled ? "#969696" : "#a000ff"} />
             <Stop
               offset={0.105208}
-              stopColor={disabled ? "#969696" : "#6783F0"}
+              stopColor={disabled ? "#969696" : "#a000ff"}
             />
-            <Stop offset={1} stopColor={disabled ? "#969696" : "#82A0F6"} />
+            <Stop offset={1} stopColor={disabled ? "#969696" : "#a000ff"} />
           </LinearGradient>
         </Defs>
       </Svg>

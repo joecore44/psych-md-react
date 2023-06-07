@@ -52,7 +52,7 @@ const DoctorProfile = React.memo(() => {
   return (
     <Container style={styles.container} useSafeArea={false}>
       <Header
-        title="Doctor Profiles"
+        title="Your Trip Sitter"
         style={{ paddingTop: top + 8 }}
         accessoryLeft={<NavigationAction status="white" />}
       />
@@ -96,7 +96,7 @@ const DoctorProfile = React.memo(() => {
               {doctor.rate.rateStar}
             </Text>
             <Text status="platinum" marginTop={4}>
-              ({doctor.rate.reviewer} reviewer)
+              ({doctor.rate.reviewer} reviews)
             </Text>
           </HStack>
         </VStack>
@@ -110,11 +110,11 @@ const DoctorProfile = React.memo(() => {
           onPress={handleInformation}
         />
         <ProfileButton
-          title="Working Address"
+          title="Work Address"
           icon="hospital"
           onPress={handleWorkAddress}
         />
-        <ProfileButton title="Reviewer" icon="star" onPress={handleReview} />
+        <ProfileButton title="Reviews" icon="star" onPress={handleReview} />
       </Content>
     </Container>
   );

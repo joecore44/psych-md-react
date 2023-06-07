@@ -12,7 +12,7 @@ const DashboardScreen = React.memo(() => {
         accessoryLeft={
           <NavigationAction status="white" icon="menu" onPress={toggleDrawer} />
         }
-        title="Test Indicators"
+        title="Charts"
       />
       <Content contentContainerStyle={styles.content}>
         <Chart />

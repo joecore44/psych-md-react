@@ -42,7 +42,7 @@ const AppointmentCalendarScreen = React.memo(() => {
     return <View></View>;
   }, [date, refDate]);
   const ListEmptyComponent = () => {
-    return <ActivityIndicator color={theme["text-info-color"]} size="large" />;
+    return <ActivityIndicator color={theme["psyc-purple"]} size="large" />;
   };
   return (
     <Container style={styles.container} useSafeArea={false}>
@@ -53,7 +53,7 @@ const AppointmentCalendarScreen = React.memo(() => {
         max={new Date(max)}
         onSelect={(e) => setDate(e)}
         style={{
-          backgroundColor: theme["text-info-color"],
+          backgroundColor: theme["psyc-purple"],
           width: width,
           flex: 1,
           paddingTop: top + 8,

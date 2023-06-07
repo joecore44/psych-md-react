@@ -12,7 +12,7 @@ export const shadowStyle = StyleSheet.create({
     elevation: 10,
   },
   shadowBtn: {
-    shadowColor: "rgba(29, 30, 44, 44)",
+    shadowColor: "rgba(29, 30, 44, .4)",
     shadowOffset: {
       width: 2,
       height: 2,

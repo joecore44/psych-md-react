@@ -27,21 +27,21 @@ const Intro = React.memo(() => {
   const SIZE = 215 * (width / 375);
   const DATA_INTRO: IIntroProps[] = [
     {
-      image: Images.doctor,
-      title: "Doctors",
-      describe:
-        "One way to announce or promote a certain new product or special ",
-    },
-    {
       image: Images.drugs,
-      title: "Drugs",
-      describe: "I know how terrible it can be for you at nights and even",
+      title: "Ketamine Therapy",
+      describe: "Ketamine, when administered under the guidance of trained professionals, holds the potential to profoundly alleviate suffering and facilitate transformative healing experiences.",
     },
     {
       image: Images.appointment,
-      title: "Appointment",
+      title: "Technology",
       describe:
-        "Kidney stones are very hard mineral deposits that happen to form",
+        "By harnessing the power of AI, VR, and professional soundscape technology, ketamine therapy becomes an enhanced and immersive therapeutic approach that holds immense promise for healing and personal growth.",
+    },
+    {
+      image: Images.doctor,
+      title: "Trip Sitters",
+      describe:
+        "Trip sitters play a crucial role in providing compassionate support and ensuring a safe and transformative experience during ketamine therapy journeys.",
     },
   ];
   const modeConfig: ILayoutConfig = {
@@ -98,7 +98,7 @@ const Intro = React.memo(() => {
 
       {activeIndex === 2 ? (
         <LinearButton
-          title="GET START"
+          title="GET STARTED"
           style={styles.startButton}
           width={width - 72}
           shadow

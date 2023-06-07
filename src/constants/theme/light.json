@@ -20,5 +20,6 @@
   "color-button-facebook": "$color-blue-500",
   "color-button-basic": "$color-main-100",
   "color-button-basic-active": "$color-main-100",
-  "color-button-disabled": "$color-basic-500"
+  "color-button-disabled": "$color-basic-500",
+  "psyc-purple": "$psyc-purple"
 }

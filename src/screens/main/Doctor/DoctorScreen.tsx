@@ -57,7 +57,7 @@ const DoctorScreen = React.memo(() => {
         </HStack>
       ) : (
         <Header
-          title="Doctor"
+          title="Trip Sitters"
           accessoryLeft={
             <NavigationAction
               icon="menu"

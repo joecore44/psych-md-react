@@ -27,6 +27,7 @@ export default function App() {
 
   React.useEffect(() => {
     AsyncStorage.getItem('theme').then((value) => {
+      value = 'dark';
       if (value === 'light' || value === 'dark') setTheme(value);
     });
   }, []);
@@ -34,7 +35,7 @@ export default function App() {
   const toggleTheme = () => {
     const nextTheme = theme === 'light' ? 'dark' : 'light';
     AsyncStorage.setItem('theme', nextTheme).then(() => {
-      setTheme(nextTheme);
+      setTheme('dark');
     });
   };
 

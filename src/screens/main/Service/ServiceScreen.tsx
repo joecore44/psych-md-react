@@ -14,7 +14,7 @@ const ServiceScreen = React.memo(() => {
   const { top } = useLayout();
   const { openDrawer } = useDrawer();
 
-  const user = { name: "Jonas" };
+  const user = { name: "Joe" };
   const handleFindDoctor = () => {
     navigate("FindScreen", { type: ServiceKey.FindDoctor });
   };
@@ -33,27 +33,27 @@ const ServiceScreen = React.memo(() => {
   const [selectedIndex, setSelectedIndex] = React.useState(0);
   const DATA = [
     {
-      title: "Find Doctor",
+      title: "Checkin",
       icon: "doctor",
-      numOfAvailable: "113 doctors",
+      numOfAvailable: "with trip sitter",
       onPress: handleFindDoctor,
     },
     {
-      title: "Find Hospital",
-      icon: "hospital",
-      numOfAvailable: "233 doctors",
+      title: "Treament",
+      icon: "search",
+      numOfAvailable: "options",
       onPress: handleFindHospital,
     },
     {
-      title: "Appointment",
+      title: "Schedule",
       icon: "appointment",
-      numOfAvailable: "113 available",
+      numOfAvailable: "an appointment",
       onPress: handleCreateAppointment,
     },
     {
-      title: "Price Service",
+      title: "Health",
       icon: "price",
-      numOfAvailable: "55 available",
+      numOfAvailable: "checkin",
       onPress: handleServicePrice,
     },
   ];
@@ -85,7 +85,7 @@ const ServiceScreen = React.memo(() => {
           Hello {user.name},
         </Text>
         <Text category="t1" status="platinum" uppercase marginHorizontal={20}>
-          how can we take care yourself?
+         Welcome to PsycMD
         </Text>
         <View style={styles.content}>
           {DATA.map((item, i) => {
@@ -116,7 +116,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   header: {
-    backgroundColor: "#4B66EA",
+    backgroundColor: "#a000ff",
     paddingBottom: 12,
     paddingHorizontal: 16,
   },
