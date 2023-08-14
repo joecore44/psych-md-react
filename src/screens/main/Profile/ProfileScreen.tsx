@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet } from "react-native";
+import { StyleSheet, View } from "react-native";
 import { Avatar } from "@ui-kitten/components";
 import { NavigationProp, useNavigation } from "@react-navigation/native";
 import { useDrawer, useLayout } from "hooks";
@@ -12,11 +12,13 @@ import {
   NavigationAction,
   Text,
   VStack,
+  ResultsChart,
 } from "components";
 import { DATA_USER } from "constants/data";
 import { shadowStyle } from "style/globalStyle";
 import { ProfileButton } from "elements";
 import { DrawerStackParamList } from "navigation/types";
+import { LineChart } from "react-native-chart-kit";
 
 const ProfileScreen = React.memo(() => {
   const { navigate } = useNavigation<NavigationProp<DrawerStackParamList>>(); 
@@ -25,6 +27,17 @@ const ProfileScreen = React.memo(() => {
 
   const user = DATA_USER[0];
   const widthItem = 114 * (width / 375);
+  const progressTitles = [
+    "Testosterone",
+    "FREE T",
+    "Hematocrit",
+  ];
+  const progressValues = [
+    780,
+    240,
+    36,
+  ];
+
   const GoalItem = React.useCallback(() => {
     return (
       <VStack style={{ width: widthItem }} mt={24}>
@@ -64,22 +77,14 @@ const ProfileScreen = React.memo(() => {
             {user.name}
           </Text>
         </VStack>
-        <VStack style={styles.fieldGoal} level="1">
-          <GoalItem />
-          <IDivider
-            appearance="primary"
-            style={{ position: "absolute", left: widthItem }}
-          />
-          <GoalItem />
-          <GoalItem />
-          <IDivider />
-          <GoalItem />
-          <GoalItem />
-          <IDivider
-            appearance="primary"
-            style={{ position: "absolute", right: widthItem }}
-          />
-          <GoalItem />
+        <VStack style={styles.results} level="2">
+        <ResultsChart
+          titles={progressTitles}
+          results={progressValues}
+          backgroundColor="#ff4000"
+          backgroundOpacity={0.6}
+        />
+         
         </VStack>
 
         <ProfileButton
@@ -105,16 +110,15 @@ const ProfileScreen = React.memo(() => {
 export default ProfileScreen;
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
+  
   content: {
     paddingHorizontal: 16,
     paddingVertical: 40,
   },
-  fieldGoal: {
-    flexDirection: "row",
-    flexWrap: "wrap",
+  
+  results: {
+    backgroundColor: "#ffffff",
+    
     borderRadius: 8,
     ...shadowStyle.shadowBtn,
   },

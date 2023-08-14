@@ -41,7 +41,9 @@ const Header = React.memo(
           {logo ? (
             <Image source={Images.logo} />
           ) : (
+            
             <Text status="white" category="t5-sb" center>
+              <Image source={Images.logo} />
               {title}
             </Text>
           )}
@@ -62,7 +64,6 @@ const styles = StyleSheet.create({
   },
   logo: {
     alignSelf: "center",
-    marginRight: 32,
   },
   center: {
     alignSelf: "center",

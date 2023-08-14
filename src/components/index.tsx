@@ -12,7 +12,7 @@ import AnimatedAppearance from "./AnimatedAppearance";
 import ScrollPicker from "./ScrollPicker";
 import Header from "./Header";
 import TabBar from "./TabBar";
-
+import ResultsChart from "./ResultsChart";
 export {
   Text,
   Container,
@@ -28,4 +28,5 @@ export {
   ScrollPicker,
   Header,
   TabBar,
+  ResultsChart,
 };
