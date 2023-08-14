@@ -77,7 +77,7 @@ const ProfileScreen = React.memo(() => {
             {user.name}
           </Text>
         </VStack>
-        <VStack style={styles.results} level="2">
+        <VStack style={styles.results} level="1">
         <ResultsChart
           titles={progressTitles}
           results={progressValues}
@@ -110,14 +110,16 @@ const ProfileScreen = React.memo(() => {
 export default ProfileScreen;
 
 const styles = StyleSheet.create({
-  
+  container: {
+    flex: 1,
+  },
   content: {
     paddingHorizontal: 16,
     paddingVertical: 40,
   },
   
   results: {
-    backgroundColor: "#ffffff",
+    
     
     borderRadius: 8,
     ...shadowStyle.shadowBtn,

@@ -13,14 +13,15 @@ interface IProgressChartProps {
 const ResultsChart: React.FC<IProgressChartProps> = ({
   titles,
   results,
-  backgroundColor = "#ffffff",
-  backgroundOpacity = 1,
+  backgroundColor = "#ff4000",
+  backgroundOpacity = 0,
+  borderRadius = 8,
 }) => {
   const maxValue = 2000;
   const normalizedResults = results.map((value) => value / maxValue);
 
   return (
-    <View style={styles.container}>
+    <View style={[styles.container, { borderRadius }]}>
       <ProgressChart
         data={normalizedResults}
         width={200}
@@ -30,13 +31,13 @@ const ResultsChart: React.FC<IProgressChartProps> = ({
         chartConfig={{
           backgroundGradientFromOpacity: backgroundOpacity,
           backgroundGradientToOpacity: backgroundOpacity,
-          color: (opacity = .2) => `rgba(255, 0, 0, ${opacity})`,
+          color: (opacity = 1) => `rgba(255, 0, 0, ${opacity})`,
         }}
         hideLegend={true}
       />
       <View style={[styles.labelsContainer, { backgroundColor }]}>
         {titles.map((title, index) => (
-          <Text style={styles.label} key={title}>
+          <Text style={styles.label} key={title} >
             {title}: {results[index]}
           </Text>
         ))}
@@ -48,7 +49,8 @@ const ResultsChart: React.FC<IProgressChartProps> = ({
 const styles = StyleSheet.create({
   container: {
     flexDirection: "row",
-    borderRadius: 50,
+    backgroundColor: "#000",
+    overflow: "hidden",
   },
   labelsContainer: {
     flex: 1,
@@ -59,6 +61,8 @@ const styles = StyleSheet.create({
   },
   label: {
     fontSize: 14,
+    color: "#fff",
+    fontWeight: "bold",
     textAlign: "right",
   },
 });
