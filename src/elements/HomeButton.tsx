@@ -14,6 +14,7 @@ interface HomeButtonProps {
   title: string;
   icon: string;
   numOfAvailable: string;
+  color?: string;
   style?: StyleProp<ViewStyle>;
   hightLight?: boolean;
   onPress?(): void;
@@ -27,6 +28,7 @@ const HomeButton = memo(
     style,
     hightLight,
     onPress,
+    color,
   }: HomeButtonProps) => {
     const { width } = useLayout();
     return (
@@ -36,7 +38,7 @@ const HomeButton = memo(
         style={[
           styles.button,
           {
-            backgroundColor: hightLight ? "#404040" : "#969696",
+            backgroundColor: hightLight ? "#969696" : color,
           },
           style,
           {

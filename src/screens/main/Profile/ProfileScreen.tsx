@@ -19,7 +19,7 @@ import { ProfileButton } from "elements";
 import { DrawerStackParamList } from "navigation/types";
 
 const ProfileScreen = React.memo(() => {
-  const { navigate } = useNavigation<NavigationProp<DrawerStackParamList>>();
+  const { navigate } = useNavigation<NavigationProp<DrawerStackParamList>>(); 
   const { width } = useLayout();
   const { openDrawer } = useDrawer();
 
@@ -52,7 +52,7 @@ const ProfileScreen = React.memo(() => {
   return (
     <Container useSafeArea={false} style={styles.container}>
       <Header
-        title="User Profile"
+        logo={true}
         accessoryLeft={
           <NavigationAction status="white" onPress={openDrawer} icon="menu" />
         }
@@ -83,17 +83,17 @@ const ProfileScreen = React.memo(() => {
         </VStack>
 
         <ProfileButton
-          title="Goal Settings"
+          title="Goals"
           icon="goal"
           onPress={handleGoalSettings}
         />
         <ProfileButton
-          title="Doctor Favorites"
+          title="Physician Visits"
           icon="heart"
           onPress={handleDoctorFavorites}
         />
         <ProfileButton
-          title="Insurances"
+          title="Insurance"
           icon="user"
           onPress={handleInsurances}
         />

@@ -1,9 +1,11 @@
 import React from "react";
-import { StyleSheet, ViewStyle, StyleProp, View } from "react-native";
+import { StyleSheet, ViewStyle, StyleProp, View, Image } from "react-native";
 import { TopNavigation, TopNavigationProps } from "@ui-kitten/components";
 import { useLayout } from "hooks";
 import HStack from "./HStack";
 import Text from "./Text";
+import { Images } from "assets/images";
+console.log(Images.logo);
 
 interface IHeaderProps {
   style?: StyleProp<ViewStyle>;
@@ -11,6 +13,7 @@ interface IHeaderProps {
   accessoryRight?: JSX.Element;
   accessoryCenter?: JSX.Element;
   title?: string;
+  logo?: boolean;
 }
 
 const Header = React.memo(
@@ -19,6 +22,7 @@ const Header = React.memo(
     accessoryLeft,
     accessoryRight,
     title,
+    logo, // Add logo prop
     style,
   }: IHeaderProps) => {
     const { top } = useLayout();
@@ -33,13 +37,13 @@ const Header = React.memo(
         ]}
       >
         {accessoryLeft}
-        <View style={styles.center}>
-          {title ? (
+        <View style={styles.logo}>
+          {logo ? (
+            <Image source={Images.logo} />
+          ) : (
             <Text status="white" category="t5-sb" center>
               {title}
             </Text>
-          ) : (
-            accessoryCenter
           )}
         </View>
         {accessoryRight}
@@ -47,6 +51,7 @@ const Header = React.memo(
     );
   }
 );
+
 export default Header;
 
 const styles = StyleSheet.create({
@@ -54,6 +59,10 @@ const styles = StyleSheet.create({
     backgroundColor: "#404040",
     paddingHorizontal: 16,
     paddingBottom: 12,
+  },
+  logo: {
+    alignSelf: "center",
+    marginRight: 32,
   },
   center: {
     alignSelf: "center",

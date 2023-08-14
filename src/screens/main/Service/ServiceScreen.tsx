@@ -33,29 +33,33 @@ const ServiceScreen = React.memo(() => {
   const [selectedIndex, setSelectedIndex] = React.useState(0);
   const DATA = [
     {
-      title: "Checkin",
+      title: "PeterMD",
       icon: "doctor",
-      numOfAvailable: "with trip sitter",
+      numOfAvailable: "men's health",
       onPress: handleFindDoctor,
+      color: '#FF5733',
     },
     {
-      title: "Treament",
+      title: "PetraMD",
       icon: "search",
-      numOfAvailable: "options",
+      numOfAvailable: "women's health",
       onPress: handleFindHospital,
+      color: '#412e3e',
+    },
+    {
+      title: "PsychMD",
+      icon: "price",
+      numOfAvailable: "mental health",
+      onPress: handleServicePrice,
+      color: '#353b64',
     },
     {
       title: "Schedule",
       icon: "appointment",
       numOfAvailable: "an appointment",
       onPress: handleCreateAppointment,
-    },
-    {
-      title: "Health",
-      icon: "price",
-      numOfAvailable: "checkin",
-      onPress: handleServicePrice,
-    },
+      color: '#FF5733',
+    }
   ];
   return (
     <Container style={styles.container} useSafeArea={false}>
@@ -75,7 +79,7 @@ const ServiceScreen = React.memo(() => {
           <NavigationAction icon="notification" status="white" onPress={handleNotification} />
         </HStack>
       </HStack>
-      <Content contentContainerStyle={styles.contentContainerStyle}>
+      <Content contentContainerStyle={styles.contentContainerStyle}> 
         <Text
           category="header-sb"
           marginTop={40}
@@ -85,7 +89,7 @@ const ServiceScreen = React.memo(() => {
           Hello {user.name},
         </Text>
         <Text category="t1" status="platinum" uppercase marginHorizontal={20}>
-         Welcome to PsycMD
+         Welcome to the Family!
         </Text>
         <View style={styles.content}>
           {DATA.map((item, i) => {
@@ -99,7 +103,8 @@ const ServiceScreen = React.memo(() => {
                   item.onPress();
                   setSelectedIndex(i);
                 }}
-                hightLight={i === selectedIndex}
+                hightLight={i === 3}
+                color={item.color}
               />
             );
           })}
