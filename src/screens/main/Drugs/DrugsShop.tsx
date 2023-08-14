@@ -18,7 +18,7 @@ const DrugsShop = React.memo(() => {
   return (
     <Container style={styles.container} useSafeArea={false}>
       <Header
-        title="Drugs Shop"
+        title="Order Medication"
         accessoryLeft={<NavigationAction status="white" />}
         accessoryRight={<NavigationAction status="white" icon="shopBag" />}
       />
@@ -74,65 +74,72 @@ const styles = StyleSheet.create({
 const DATA = [
   {
     image: {
-      path: "https://user-images.githubusercontent.com/87011701/191222263-f24bc00a-538c-4a7e-8d4a-77b146fc3f0d.png",
+      path: "https://getpetermd.com/wp-content/uploads/Box_Minoxdil-1024x768-1.jpg",
     },
-    name: "Healer Drugs",
-    price: 29,
+    name: "Testosterone",
+    price: 119,
   },
   {
     image: {
-      path: "https://user-images.githubusercontent.com/87011701/191222263-f24bc00a-538c-4a7e-8d4a-77b146fc3f0d.png",
+      path: "https://getpetermd.com/wp-content/uploads/Box_Minoxdil-1024x768-1.jpg",
     },
-    name: "Healer Drugs",
-    price: 29,
+    name: "Nandrolone",
+    price: 108,
   },
   {
     image: {
-      path: "https://user-images.githubusercontent.com/87011701/191222263-f24bc00a-538c-4a7e-8d4a-77b146fc3f0d.png",
+      path: "https://getpetermd.com/wp-content/uploads/Box_Minoxdil-1024x768-1.jpg",
     },
-    name: "Healer Drugs",
-    price: 29,
+    name: "Testosterone",
+    price: 119,
   },
   {
     image: {
-      path: "https://user-images.githubusercontent.com/87011701/191222263-f24bc00a-538c-4a7e-8d4a-77b146fc3f0d.png",
+      path: "https://getpetermd.com/wp-content/uploads/Box_Minoxdil-1024x768-1.jpg",
     },
-    name: "Healer Drugs",
-    price: 29,
+    name: "Nandrolone",
+    price: 108,
   },
   {
     image: {
-      path: "https://user-images.githubusercontent.com/87011701/191222263-f24bc00a-538c-4a7e-8d4a-77b146fc3f0d.png",
+      path: "https://getpetermd.com/wp-content/uploads/Box_Minoxdil-1024x768-1.jpg",
     },
-    name: "Healer Drugs",
-    price: 29,
+    name: "Testosterone",
+    price: 119,
   },
   {
     image: {
-      path: "https://user-images.githubusercontent.com/87011701/191222263-f24bc00a-538c-4a7e-8d4a-77b146fc3f0d.png",
+      path: "https://getpetermd.com/wp-content/uploads/Box_Minoxdil-1024x768-1.jpg",
     },
-    name: "Healer Drugs",
-    price: 29,
+    name: "Nandrolone",
+    price: 108,
   },
   {
     image: {
-      path: "https://user-images.githubusercontent.com/87011701/191222263-f24bc00a-538c-4a7e-8d4a-77b146fc3f0d.png",
+      path: "https://getpetermd.com/wp-content/uploads/Box_Minoxdil-1024x768-1.jpg",
     },
-    name: "Healer Drugs",
-    price: 29,
+    name: "Testosterone",
+    price: 119,
   },
   {
     image: {
-      path: "https://user-images.githubusercontent.com/87011701/191222263-f24bc00a-538c-4a7e-8d4a-77b146fc3f0d.png",
+      path: "https://getpetermd.com/wp-content/uploads/Box_Minoxdil-1024x768-1.jpg",
     },
-    name: "Healer Drugs",
-    price: 29,
+    name: "Nandrolone",
+    price: 108,
   },
   {
     image: {
-      path: "https://user-images.githubusercontent.com/87011701/191222263-f24bc00a-538c-4a7e-8d4a-77b146fc3f0d.png",
+      path: "https://getpetermd.com/wp-content/uploads/Box_Minoxdil-1024x768-1.jpg",
     },
-    name: "Healer Drugs",
-    price: 29,
+    name: "Testosterone",
+    price: 119,
+  },
+  {
+    image: {
+      path: "https://getpetermd.com/wp-content/uploads/Box_Minoxdil-1024x768-1.jpg",
+    },
+    name: "Nandrolone",
+    price: 108,
   },
 ];

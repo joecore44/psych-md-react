@@ -22,7 +22,7 @@ const DrugsShopDetails = React.memo(() => {
   return (
     <Container style={styles.container} useSafeArea={false}>
       <Header
-        title="Amoxicillin"
+        title="Testosterone Cypionate"
         accessoryLeft={<NavigationAction status="white" />}
         accessoryRight={
           <NavigationAction status="white" icon="shopBag" onPress={handleBuy} />

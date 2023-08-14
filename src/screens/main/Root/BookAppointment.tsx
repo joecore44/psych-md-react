@@ -46,7 +46,7 @@ const BookAppointment = React.memo(() => {
   }, [refFlatList, selectedTime]);
 
   const customTheme: Theme = {
-    calendarBackground: theme["psyc-purple"],
+    calendarBackground: "#d8d6d6",
     selectedDayBackgroundColor: theme["psyc-purple"],
     textDayFontFamily: "Poppins-Regular",
     textDayHeaderFontWeight: "500",
@@ -78,7 +78,7 @@ const BookAppointment = React.memo(() => {
         activeOpacity={0.7}
         style={{
           marginHorizontal: 8,
-          backgroundColor: isActive ? "#558FC6" : "white",
+          backgroundColor: isActive ? "#404040" : "white",
           paddingHorizontal: 16,
           paddingVertical: 12,
           borderRadius: 6,
@@ -208,7 +208,7 @@ const styles = StyleSheet.create({
     marginBottom: 16,
   },
   headerCalendar: {
-    backgroundColor: "#a000ff",
+    backgroundColor: "#404040",
     marginHorizontal: -6,
     borderTopLeftRadius: 6,
     borderTopRightRadius: 6,

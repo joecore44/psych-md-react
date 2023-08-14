@@ -320,26 +320,26 @@ const DATA_NOTIFICATION = [
 ];
 const DATA_DRUGS = [
   {
-    name: "Amoxicillin and Clavulanate",
-    price: 29,
+    name: "Testosterone Cypionate",
+    price: 119,
     image: {
-      path: "https://user-images.githubusercontent.com/87011701/191222263-f24bc00a-538c-4a7e-8d4a-77b146fc3f0d.png",
+      path: "https://getpetermd.com/wp-content/uploads/Box_Minoxdil-1024x768-1.jpg",
     },
     information: [
       {
-        title: "What is amoxicillin?",
+        title: "What is TRT?",
         describer:
-          "If you are a male over the age of 40 and are suffering from weakness, impotence, pain, stiffness, drooping",
+          "Testosterone replacement therapy (TRT) is a treatment used to increase testosterone levels in men who have low testosterone. It is available in various forms, including injections, gels, patches, and pellets. TRT can help improve symptoms such as low libido, fatigue, and muscle loss.",
       },
       {
         title: "Important information",
         describer:
-          "If you are a male over the age of 40 and are suffering from weakness, impotence, pain, stiffness, drooping",
+        "Testosterone replacement therapy (TRT) is a treatment used to increase testosterone levels in men who have low testosterone. It is available in various forms, including injections, gels, patches, and pellets. TRT can help improve symptoms such as low libido, fatigue, and muscle loss.",
       },
       {
-        title: "Amoxicillin side effects",
+        title: "TRT side effects",
         describer:
-          "If you are a male over the age of 40 and are suffering from weakness, impotence, pain, stiffness, drooping",
+        "Testosterone replacement therapy (TRT) is a treatment used to increase testosterone levels in men who have low testosterone. It is available in various forms, including injections, gels, patches, and pellets. TRT can help improve symptoms such as low libido, fatigue, and muscle loss.",
       },
     ],
   },
