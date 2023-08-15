@@ -28,20 +28,20 @@ const Intro = React.memo(() => {
   const DATA_INTRO: IIntroProps[] = [
     {
       image: Images.drugs,
-      title: "Ketamine Therapy",
-      describe: "Ketamine, when administered under the guidance of trained professionals, holds the potential to profoundly alleviate suffering and facilitate transformative healing experiences.",
+      title: "PeterMD",
+      describe: "The Top US online men's health clinic specializing in TRT. We offer convenient and confidential services with a team of experienced professionals, using advanced telemedicine for personalized treatment plans.",
     },
     {
       image: Images.appointment,
-      title: "Technology",
+      title: "PetraMD",
       describe:
-        "By harnessing the power of AI, VR, and professional soundscape technology, ketamine therapy becomes an enhanced and immersive therapeutic approach that holds immense promise for healing and personal growth.",
+        "A leading online women's health clinic in the US, focusing on comprehensive health solutions. Specializing in a range of services, including hormone therapy, we employ advanced telemedicine providing personalized treatment plans.",
     },
     {
-      image: Images.doctor,
-      title: "Trip Sitters",
+      image: Images.drugs,
+      title: "PsychMD",
       describe:
-        "Trip sitters play a crucial role in providing compassionate support and ensuring a safe and transformative experience during ketamine therapy journeys.",
+        "PsychMD is a leading US-based online mental health clinic that leverages AI, VR, and Ketamine therapy for innovative telemedicine solutions. Specializing in comprehensive mental wellness, PsychMD offers virtual consultations and therapeutic interventions.",
     },
   ];
   const modeConfig: ILayoutConfig = {
@@ -60,16 +60,19 @@ const Intro = React.memo(() => {
 
   const renderItem = React.useCallback(
     ({ item, index }: { item: IIntroProps; index: number }) => {
+      const backgroundColor = index === 0 ? "#ff4000" : index === 1 ? "#412e3e" : "#78da83"; 
+      const fontColor = index === 0 ? "black" : index === 1 ? "#f8f9fa" : "black"; 
+  
       return (
-        <View style={styles.screen} key={index}>
+        <View style={[styles.screen, { backgroundColor }]} key={index}>
           <Image
             source={item.image}
             style={{ width: SIZE, height: SIZE, marginBottom: 80 }}
           />
-          <Text category="t3-sb" marginBottom={24}>
+          <Text category="t3-sb" marginBottom={24} style={{ color: fontColor }}>
             {item.title}
           </Text>
-          <Text category="t5" center>
+          <Text category="t5" center style={{ color: fontColor }}>
             {item.describe}
           </Text>
         </View>

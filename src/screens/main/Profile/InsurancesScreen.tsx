@@ -21,7 +21,7 @@ const InsurancesScreen = React.memo(() => {
   return (
     <Container style={styles.container} useSafeArea={false}>
       <Header
-        title="Insurances"
+        title="Insurance"
         accessoryLeft={<NavigationAction status="white" />}
       />
       <FlatList
@@ -56,36 +56,5 @@ const DATA: InsurancesItemProps[] = [
     plan: "Pro",
     title: "Personal Insurances",
   },
-  {
-    groupId: "24-789",
-    enrolleeId: "VMH9231458760",
-    user: DATA_USER[0],
-    dateEffective: new Date(),
-    plan: "Pro",
-    title: "Personal Insurances",
-  },
-  {
-    groupId: "24-789",
-    enrolleeId: "VMH9231458760",
-    user: DATA_USER[0],
-    dateEffective: new Date(),
-    plan: "Pro",
-    title: "Personal Insurances",
-  },
-  {
-    groupId: "24-789",
-    enrolleeId: "VMH9231458760",
-    user: DATA_USER[0],
-    dateEffective: new Date(),
-    plan: "Pro",
-    title: "Personal Insurances",
-  },
-  {
-    groupId: "24-789",
-    enrolleeId: "VMH9231458760",
-    user: DATA_USER[0],
-    dateEffective: new Date(),
-    plan: "Pro",
-    title: "Personal Insurances",
-  },
+  
 ];

@@ -33,7 +33,7 @@ const AddDrugsScreen = React.memo(() => {
   return (
     <Container style={styles.container}>
       <Header
-        title="Add Drugs"
+        title="Add Medication"
         accessoryLeft={<NavigationAction status="white" />}
       />
       <Content contentContainerStyle={styles.content}>

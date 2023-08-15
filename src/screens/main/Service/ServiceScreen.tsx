@@ -8,6 +8,8 @@ import { Images } from "assets/images";
 import { HomeButton } from "elements";
 import { DrawerStackParamList } from "navigation/types";
 import { ServiceKey } from "constants/types";
+import { MainStackParamList } from "constants/types";
+
 
 const ServiceScreen = React.memo(() => {
   const { navigate } = useNavigation<NavigationProp<DrawerStackParamList>>();
@@ -15,8 +17,8 @@ const ServiceScreen = React.memo(() => {
   const { openDrawer } = useDrawer();
 
   const user = { name: "Joe" };
-  const handleFindDoctor = () => {
-    navigate("FindScreen", { type: ServiceKey.FindDoctor });
+  const handleFindProfile = () => {
+    navigate("Profile");
   };
   const handleFindHospital = () => {
     navigate("FindScreen", { type: ServiceKey.FindHospital });
@@ -36,7 +38,7 @@ const ServiceScreen = React.memo(() => {
       title: "PeterMD",
       icon: "doctor",
       numOfAvailable: "men's health",
-      onPress: handleFindDoctor,
+      onPress: handleFindProfile,
       color: '#FF5733',
     },
     {
